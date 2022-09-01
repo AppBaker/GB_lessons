@@ -9,3 +9,6 @@ while (count < 10) {
 }
 
 Console.WriteLine(sum);
+
+string text = "Go Go go";
+Console.WriteLine(text.ToLower());
