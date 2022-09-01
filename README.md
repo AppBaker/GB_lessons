@@ -1,3 +1,5 @@
 ## GEEK BRAINS мой учебник
 
-[git](/Git/)
+* [git](/Git/)
+* [VSCODE](/VSCODE/)
+* [C#](/Lessons_C%23/)
