@@ -31,33 +31,35 @@ if (inputLine != null)
     // SWITCH STATEMENT
     string outDayOfWeek = "";
 
-    switch (inputDayOfWeek)
-    {
-        case 1:
-            outDayOfWeek = "Monday";
-            break;
-        case 2:
-            outDayOfWeek = "Tuesday";
-            break;
-        case 3:
-            outDayOfWeek = "Wednesday";
-            break;
-        case 4:
-            outDayOfWeek = "Thursday";
-            break;
-        case 5:
-            outDayOfWeek = "Friday";
-            break;
-        case 6:
-            outDayOfWeek = "Saturday";
-            break;
-        case 7:
-            outDayOfWeek = "Sunday";
-            break;
-        default:
-            outDayOfWeek = "Index out of range, there is not such day";
-            break;
-    }
+    // switch (inputDayOfWeek)
+    // {
+    //     case 1:
+    //         outDayOfWeek = "Monday";
+    //         break;
+    //     case 2:
+    //         outDayOfWeek = "Tuesday";
+    //         break;
+    //     case 3:
+    //         outDayOfWeek = "Wednesday";
+    //         break;
+    //     case 4:
+    //         outDayOfWeek = "Thursday";
+    //         break;
+    //     case 5:
+    //         outDayOfWeek = "Friday";
+    //         break;
+    //     case 6:
+    //         outDayOfWeek = "Saturday";
+    //         break;
+    //     case 7:
+    //         outDayOfWeek = "Sunday";
+    //         break;
+    //     default:
+    //         outDayOfWeek = "Index out of range, there is not such day";
+    //         break;
+    // }
+
+    outDayOfWeek = System.Globalization.CultureInfo.GetCultureInfo("ru-Ru").DateTimeFormat.GetDayName((DayOfWeek)Enum.GetValues(typeof(DayOfWeek)).GetValue(inputDayOfWeek));
     Console.WriteLine(outDayOfWeek);
 
 }
