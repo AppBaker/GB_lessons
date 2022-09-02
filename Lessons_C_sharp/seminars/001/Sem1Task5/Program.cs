@@ -9,13 +9,17 @@ string? inputLineN = Console.ReadLine();
 if (inputLineN != null)
 {
     int numberN = int.Parse(inputLineN);
-    
-    int startNumberN = (-1)*numberN;
-
-    while (startNumberN<=numberN)
+    if (numberN > 0)
     {
-        Console.Write(startNumberN + ", ");
-        startNumberN += 1;
+
+
+        int startNumberN = (-1) * numberN;
+
+        while (startNumberN <= numberN)
+        {
+            Console.Write(startNumberN + ", ");
+            startNumberN += 1;
+        }
     }
 
 }
