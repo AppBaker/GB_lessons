@@ -16,11 +16,12 @@ if (inputA != null && inputB != null)
 
 
 {
-    
+
     int numberA = int.Parse(inputA);
     int numberB = int.Parse(inputB);
 
-    bool outResult = (numberA * numberA == numberB);
+    // bool outResult = (numberA * numberA == numberB);
+    bool ourResult = Math.Sqrt(numberB) == numberA;
 
     Console.WriteLine(outResult);
 
