@@ -2,4 +2,4 @@
 
 * [git](/Git/)
 * [VSCODE](/VSCODE/)
-* [C#](/Lessons_C%23/)
+* [C#](/Lessons_C_sharp/)
