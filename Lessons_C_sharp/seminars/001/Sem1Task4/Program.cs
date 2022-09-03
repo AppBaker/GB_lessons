@@ -29,22 +29,22 @@ if (inputLineA != null && inputLineB != null && inputLineС != null)
     // int[] numbers = {numberA, numberB, numberC};
     // Array.Sort(numbers);
     // Console.WriteLine("Max number = " + numbers.Last());
-//=============================================
+    //=============================================
     // ВАРИАНТ #2 ветвление
     // При помощи ветвления определяем какое число больше
     if (numberA > numberB)
     {
         if (numberA > numberC)
-             {
-                Console.WriteLine("Number A = " + numberA + " max");
-             }
-             else
-             {
-                Console.WriteLine("Number C = " + numberC + " max");
-             }
+        {
+            Console.WriteLine("Number A = " + numberA + " max");
+        }
+        else
+        {
+            Console.WriteLine("Number C = " + numberC + " max");
+        }
 
     }
-    else 
+    else
     {
         if (numberB > numberC)
         {

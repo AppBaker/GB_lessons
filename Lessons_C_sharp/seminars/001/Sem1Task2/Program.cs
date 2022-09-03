@@ -25,9 +25,9 @@ if (inputLineA != null && inputLineB != null)
     {
         Console.WriteLine("Number A>B: " + numberA + " > " + numberB);
     }
-    else if (numberB > numberA) 
+    else if (numberB > numberA)
     {
-         Console.WriteLine("Number B>A:" + numberB + " > " + numberA);
+        Console.WriteLine("Number B>A:" + numberB + " > " + numberA);
     }
     else
     {
