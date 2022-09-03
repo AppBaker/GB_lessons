@@ -23,7 +23,7 @@ if (inputA != null && inputB != null)
     // bool outResult = (numberA * numberA == numberB);
     bool ourResult = Math.Sqrt(numberB) == numberA;
 
-    Console.WriteLine(outResult);
+    Console.WriteLine(ourResult);
 
     // if ((int)(numberB * numberB) == (int)numberA)
     // {
