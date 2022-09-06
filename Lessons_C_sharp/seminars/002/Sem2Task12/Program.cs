@@ -48,7 +48,7 @@ void ReadData()
     Console.WriteLine("Enter number B");
     string? inputLineB = Console.ReadLine();
 
-     if (inputLineA != null && inputLineB != null)
+    if (inputLineA != null && inputLineB != null)
     {
         numberA = int.Parse(inputLineA);
         numberB = int.Parse(inputLineB);
@@ -66,13 +66,13 @@ void CalculateData()
 void PrintData()
 {
     if (result)
-        {
-            Console.WriteLine(numberB + " кратно " + numberA);
-        }
-        else
-        {
-            Console.WriteLine(numberB + " НЕ кратно " + numberA + " остаток от деления " + numberB % numberA);
-        }
+    {
+        Console.WriteLine(numberB + " кратно " + numberA);
+    }
+    else
+    {
+        Console.WriteLine(numberB + " НЕ кратно " + numberA + " остаток от деления " + numberB % numberA);
+    }
 }
 
 ReadData();

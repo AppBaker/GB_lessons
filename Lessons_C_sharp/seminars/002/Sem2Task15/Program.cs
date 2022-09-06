@@ -60,7 +60,7 @@ void PrintData()
 {
     if (day != 0)
     {
-    Console.WriteLine(day + " -> " + daysOfWeek[day]);
+        Console.WriteLine(day + " -> " + daysOfWeek[day]);
     }
     else
     {

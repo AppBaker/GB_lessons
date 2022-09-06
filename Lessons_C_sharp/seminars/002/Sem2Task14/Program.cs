@@ -19,7 +19,7 @@ void MyMethod()
         }
         else
         {
-        Console.WriteLine(number + " НЕ кратно 7 и 23");
+            Console.WriteLine(number + " НЕ кратно 7 и 23");
         }
     }
 }
