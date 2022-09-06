@@ -17,6 +17,10 @@ string mewStrung = "Hello new string";
 ```
 int number = new Random().Next(x, y);
 ```
+### Math
+```
+int maxNumber = Math.Max(numA, numB);
+```
 
 
 ### Вывод в консоли текста
@@ -36,6 +40,13 @@ double funcName(double x)
 {
 double result = x * x + 1;
 return result;
+}
+```
+Функция которая ни чего не возвращает
+```
+void funcName(double x)
+{
+double result = x * x + 1;
 }
 ```
 
@@ -58,4 +69,29 @@ array[0] -> обращаемся к 0 элементу массива
 ```
 array.Length -> количество элементов в массиве
 
+```
+
+### Тернарный оператор
+
+```
+(условие) ? <значение 1> : < значение 2>
+```
+## Типы данных
+```
+int A = 5; 4 байта
+```
+```
+long A = 5; 8 байт
+```
+```
+short A = 5; 1 байт
+```
+```
+bool A = true/false; 1 байт
+```
+```
+string A = "Hello"; 12 байт и разростается
+```
+```
+char A = "j"; 2 байта
 ```
