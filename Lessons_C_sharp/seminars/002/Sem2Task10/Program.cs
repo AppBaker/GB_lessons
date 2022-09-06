@@ -21,7 +21,7 @@ void ReadData()
 // Преобразование данных и выделение второй цифры
 void CalculateData()
 {
-    if (inputLine != null)
+    if (inputLine != null && inputLine.Length == 3)
     {
         int number = int.Parse(inputLine);
         result = (number / 10) % 10;
@@ -58,17 +58,20 @@ void PrintData()
 // // Преобразование данных и выделение второй цифры
 // void CalculateData()
 // {
-//     if (inputLine != null && inputLine.Length == 3)
+//     if (inputLine != null)
 //     {
-//         char[] charArray = inputLine.ToCharArray();
-//         result = charArray[1].ToString();
-//     }
-//     else
-//     {
-//         // Если ввели не трехзначное число, просим ввести другое число
-//         Console.WriteLine("You entered an invalid number, please try again.");
-//         ReadData();
-//         CalculateData();
+//         if (inputLine.Length == 3)
+//         {
+//             char[] charArray = inputLine.ToCharArray();
+//             result = charArray[1].ToString();
+//         }
+//         else
+//         {
+//             // Если ввели не трехзначное число, просим ввести другое число
+//             Console.WriteLine("You entered an invalid number, please try again.");
+//             ReadData();
+//             CalculateData();
+//         }
 //     }
 // }
 // // Выводит результат
@@ -78,6 +81,7 @@ void PrintData()
 // }
 
 // =====================================================
+
 
 // Вызов функций
 ReadData();

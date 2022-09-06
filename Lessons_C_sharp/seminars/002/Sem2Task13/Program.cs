@@ -5,13 +5,14 @@
 // Учимся структурированному программированию
 
 // Глобальные переменные
+Console.WriteLine("Программа выводит третью цифру заданного числа, если она есть");
 string inputLine = "";
 string result = "";
 
 // Вводим данные
 void ReadData()
 {
-    Console.WriteLine("Введите трехзначное число");
+    Console.WriteLine("Введите число");
     inputLine = Console.ReadLine();
 }
 
