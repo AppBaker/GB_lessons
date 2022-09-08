@@ -95,3 +95,20 @@ string A = "Hello"; 12 байт и разростается
 ```
 char A = "j"; 2 байта
 ```
+## ЦИКЛЫ
+
+while:
+```
+while (condition)
+{
+    Console.WriteLine("Текст будет повторяться пока condition == true");
+}
+```
+
+for:
+```
+for (int i = 0; i < length; i++)
+{
+    Console.WriteLine("Текст будет повторяться lenth раз");
+}
+```

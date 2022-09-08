@@ -15,7 +15,7 @@ int result = 0;
 void ReadData()
 {
     Console.WriteLine("Введите трехзначное число");
-    inputLine = Console.ReadLine();
+    inputLine = Console.ReadLine() ?? "";
 }
 
 // Преобразование данных и выделение второй цифры

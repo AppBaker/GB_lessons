@@ -41,7 +41,8 @@ void CheckDay()
             int inpupNumber = int.Parse(inputLine);
             // проверяем правильно ли введен номер дня недели
             // если нет то просим повторить ввод
-            if (inpupNumber > 0 && inpupNumber < 8)
+            // if (inpupNumber > 0 && inpupNumber < 8)
+            if (daysOfWeek.ContainsKey(inpupNumber))
             {
                 day = inpupNumber;
             }
