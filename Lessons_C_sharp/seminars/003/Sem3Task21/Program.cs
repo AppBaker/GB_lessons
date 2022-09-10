@@ -29,12 +29,16 @@ double[][] ReadData_()
     string coordinates = Console.ReadLine() ?? "0,0,0 0,0,0";
     // Разделяем строку на координаты X и Y
     string[] xyCoordinates = coordinates.Split(" ");
+
+    // Разделяем координаты точки X на x,y,z
     string[] xCoordinates = xyCoordinates[0].Split(",");
+    // Разделяем координаты точки Y на x,y,z
     string[] yCoordinates = xyCoordinates[1].Split(",");
+
     // Создаем массивы координат X и Y
     double[] xCor = new double[]{Convert.ToDouble(xCoordinates[0]), Convert.ToDouble(xCoordinates[1]), Convert.ToDouble(xCoordinates[2])}; 
     double[] yCor = new double[]{Convert.ToDouble(yCoordinates[0]), Convert.ToDouble(yCoordinates[1]), Convert.ToDouble(yCoordinates[2])};
-    // Возвращаем массив в массиве
+    // Возвращаем массив в массиве [[x,y,x],[x,y,x]]
     return new double[][]{xCor, yCor};
 
 }
