@@ -15,13 +15,13 @@ int ReadData(string line)
 }
 
 // Вычисление квадратов от 1 до number
-string SquareNumberRange(int number)
+string SquareNumberRange(int number, int pow)
 {
-    string result = "";
+    string result = "\t";
     for (int i = 1; i <= number; i++)
     {
-        result += Math.Pow(i, 2).ToString();
-        result += "; ";
+        result += Math.Pow(i, pow).ToString();
+        result += "\t";
     }
     return result;
 }
@@ -35,7 +35,8 @@ void PrintResult(string line)
 // Исполнение программы
 int number = ReadData("Enter number:");
 
-PrintResult($"{number} -> " + CalculateDistance(number));
+PrintResult($"{number} -> " + SquareNumberRange(number, 1));
+PrintResult($"{number} -> " + SquareNumberRange(number, 2));
 
 
 

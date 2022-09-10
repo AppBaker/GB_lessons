@@ -112,3 +112,9 @@ for (int i = 0; i < length; i++)
     Console.WriteLine("Текст будет повторяться lenth раз");
 }
 ```
+
+# Работа с текстом
+## Табуляция \t
+```
+string text = "Some text" + "\t" + "text"
+```
