@@ -17,7 +17,7 @@ double[] ReadData(string line)
     double y = double.Parse(Console.ReadLine() ?? "0");
     Console.Write("Coordinate z = ");
     double z = double.Parse(Console.ReadLine() ?? "0");
-    return new double[] {x,y,z};
+    return new double[] { x, y, z };
 
 }
 
@@ -36,10 +36,10 @@ double[][] ReadData_()
     string[] yCoordinates = xyCoordinates[1].Split(",");
 
     // Создаем массивы координат X и Y
-    double[] xCor = new double[]{Convert.ToDouble(xCoordinates[0]), Convert.ToDouble(xCoordinates[1]), Convert.ToDouble(xCoordinates[2])}; 
-    double[] yCor = new double[]{Convert.ToDouble(yCoordinates[0]), Convert.ToDouble(yCoordinates[1]), Convert.ToDouble(yCoordinates[2])};
+    double[] xCor = new double[] { Convert.ToDouble(xCoordinates[0]), Convert.ToDouble(xCoordinates[1]), Convert.ToDouble(xCoordinates[2]) };
+    double[] yCor = new double[] { Convert.ToDouble(yCoordinates[0]), Convert.ToDouble(yCoordinates[1]), Convert.ToDouble(yCoordinates[2]) };
     // Возвращаем массив в массиве [[x,y,x],[x,y,x]]
-    return new double[][]{xCor, yCor};
+    return new double[][] { xCor, yCor };
 
 }
 

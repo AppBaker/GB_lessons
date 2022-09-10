@@ -13,14 +13,14 @@ double[] ReadData(string line)
     double x = double.Parse(Console.ReadLine() ?? "0");
     Console.Write("Coordinate y = ");
     double y = double.Parse(Console.ReadLine() ?? "0");
-    return new double[] {x,y};
+    return new double[] { x, y };
 
 }
 
 // Вычисление растояния между двумя точками
 double CalculateDistance(double[] x, double[] y)
 {
-    double distance = Math.Sqrt(Math.Pow(x[0]-y[0], 2) + Math.Pow(x[1]- y[1], 2));
+    double distance = Math.Sqrt(Math.Pow(x[0] - y[0], 2) + Math.Pow(x[1] - y[1], 2));
     return distance;
 }
 
