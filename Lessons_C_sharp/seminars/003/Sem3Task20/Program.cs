@@ -10,16 +10,17 @@ double[] ReadData(string line)
     //Выводим сообщение
     Console.WriteLine(line);
     Console.Write("Coordinate x = ");
-    double x = double.Parse(Console.ReadLine());
+    double x = double.Parse(Console.ReadLine() ?? "0");
     Console.Write("Coordinate y = ");
-    double y = double.Parse(Console.ReadLine());
+    double y = double.Parse(Console.ReadLine() ?? "0");
     return new double[] {x,y};
 
 }
 
+// Вычисление растояния между двумя точками
 double CalculateDistance(double[] x, double[] y)
 {
-    double distance = Math.Sqrt(Math.Pow(x[0]+y[0], 2) + Math.Pow(x[1]+ y[1], 2));
+    double distance = Math.Sqrt(Math.Pow(x[0]-y[0], 2) + Math.Pow(x[1]- y[1], 2));
     return distance;
 }
 
@@ -33,7 +34,7 @@ void PrintResult(string line)
 
 double[] x = ReadData("Enter coordinates for X: ");
 double[] y = ReadData("Enter coordinates for Y: ");
-PrintResult("Distance betwen X and Y = " + CalculateDistance(x, y));
+PrintResult("Distance betwen X and Y = " + Math.Round(CalculateDistance(x, y), 3));
 
 
 
