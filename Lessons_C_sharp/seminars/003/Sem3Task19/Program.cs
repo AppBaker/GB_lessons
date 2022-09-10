@@ -31,6 +31,7 @@ bool PolindromTestMassiv(string number)
 }
 // Метод2 словарь(ключ 2 цифры + значение 2 цифры)
 // ДЛЯ ПЯТИЗНАЧНОГО ПАЛИНДРОМА
+// Возвращаем null если введено неверное число
 
 bool? PolindromTestDict(string number)
 {
@@ -65,6 +66,7 @@ bool? PolindromTestDict(string number)
 
 // Метод 3 словарь (ключи->первые 2 цифры и последные две цифры палиндрома)
 // ДЛЯ ПЯТИЗНАЧНОГО ПАЛИНДРОМА
+// Возвращаем null если введено неверное число
 
 bool? PolindromTestDict_(string number)
 {
