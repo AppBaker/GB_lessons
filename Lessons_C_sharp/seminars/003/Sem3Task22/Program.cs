@@ -15,7 +15,7 @@ int ReadData(string line)
 }
 
 // Вычисление квадратов от 1 до number
-string CalculateDistance(int number)
+string SquareNumberRange(int number)
 {
     string result = "";
     for (int i = 1; i <= number; i++)
