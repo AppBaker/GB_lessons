@@ -30,6 +30,7 @@ bool PolindromTestMassiv(string number)
     return result;
 }
 // Метод2 словарь(ключ 2 цифры + значение 2 цифры)
+// ДЛЯ ПЯТИЗНАЧНОГО ПАЛИНДРОМА
 
 bool? PolindromTestDict(string number)
 {
@@ -62,7 +63,8 @@ bool? PolindromTestDict(string number)
     return result;
 }
 
-// Метод 3 словарь (ключи->первые 2 цифры и последные две цифры полиндрома)
+// Метод 3 словарь (ключи->первые 2 цифры и последные две цифры палиндрома)
+// ДЛЯ ПЯТИЗНАЧНОГО ПАЛИНДРОМА
 
 bool? PolindromTestDict_(string number)
 {
@@ -83,7 +85,7 @@ bool? PolindromTestDict_(string number)
         // Проверяем есть ли ключ в словаре
         if (polindromDict.ContainsKey(((numberInt / 1000) * 1000) + numberInt % 100))
         {
-            // Если есть то число является полиндромом
+            // Если есть то число является палиндромом
             result = true;
         }
         else result = false;
@@ -110,12 +112,14 @@ string number = ReadData("Введите пятизначное число:");
 Console.WriteLine($"Является ли число {number} полиндромом: " + (PolindromTestMassiv(number) ? "Да" : "Нет"));
 
 // вызываем Метод2 dict
+// Проверяем на null
 if (PolindromTestDict(number) != null)
 {
     bool newBool = PolindromTestDict(number) ?? false;
     Console.WriteLine($"Является ли число {number} полиндромом: " + (newBool ? "Да" : "Нет"));
 }
 // вызываем Метод3 dict1
+// Проверяем на null
 if (PolindromTestDict_(number) != null)
 {
     bool newBool = PolindromTestDict_(number) ?? false;
