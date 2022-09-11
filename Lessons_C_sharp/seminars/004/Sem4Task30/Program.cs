@@ -14,7 +14,7 @@ int ReadData(string line)
     return result;
 }
 
-// Произведение чисел
+// Вывод случайных чисел в массиве
 int[] RandomArray(int number)
 {
     int[] randomArray = new int[number];

@@ -3,8 +3,6 @@
 // 452 -> 11
 // 82 -> 10
 // 9012 -> 12
-
- 
 //=============================================
 
 //Запрос данных у пользователя
@@ -52,6 +50,16 @@ void PrintResult(string line)
 // Выполнение программы
 int number = ReadData("Введите число: ");
 
-PrintResult($"Сумма чисел в числе {number} равна -> {CalculateSumDigit(number)}");
-PrintResult($"Сумма чисел в числе {number} равна -> {CalculateSumDigit_(number)}");
+Console.WriteLine();
 
+Console.WriteLine("Вычисление через вещественные числа");
+DateTime d1 = DateTime.Now;
+PrintResult($"Сумма чисел в числе {number} равна -> {CalculateSumDigit(number)}");
+Console.WriteLine(DateTime.Now - d1);
+
+Console.WriteLine();
+
+Console.WriteLine("Вычисление через строки");
+DateTime d2 = DateTime.Now;
+PrintResult($"Сумма чисел в числе {number} равна -> {CalculateSumDigit_(number)}");
+Console.WriteLine(DateTime.Now - d2);
