@@ -56,7 +56,7 @@ Console.WriteLine("Вычисление через вещественные чи
 DateTime d1 = DateTime.Now;
 PrintResult($"Сумма чисел в числе {number} равна -> {CalculateSumDigit(number)}");
 Console.WriteLine(DateTime.Now - d1);
-
+// Добавим пустую строку чтобы лучше читать результат
 Console.WriteLine();
 
 Console.WriteLine("Вычисление через строки");
