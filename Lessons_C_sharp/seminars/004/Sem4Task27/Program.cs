@@ -47,15 +47,17 @@ void PrintResult(string line)
 }
 
 
-// Выполнение программы
+// Выполнение программы + проверка скорости
 int number = ReadData("Введите число: ");
 
+// Добавим пустую строку чтобы лучше читать результат
 Console.WriteLine();
 
 Console.WriteLine("Вычисление через вещественные числа");
 DateTime d1 = DateTime.Now;
 PrintResult($"Сумма чисел в числе {number} равна -> {CalculateSumDigit(number)}");
 Console.WriteLine(DateTime.Now - d1);
+
 // Добавим пустую строку чтобы лучше читать результат
 Console.WriteLine();
 
