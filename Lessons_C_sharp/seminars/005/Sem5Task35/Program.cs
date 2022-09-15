@@ -82,4 +82,4 @@ int CountElementsFitRangeInArr(int[] array)
 int[] array = FillArray(123);
 
 Print1DArr(array);
-PrintResult($"Количество элементов [10:99] = {CountElementsFitRangeInArr(array)}");
+Console.WriteLine("Количество элементов в диапазоне [10:99] = {0}", CountElementsFitRangeInArr(array));
