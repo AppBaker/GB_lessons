@@ -149,13 +149,17 @@ int[] SortByPustMethod(int[] array)
 }
 
 // Сортировка массива методом подсчета
-int[] SortByCountMethod(int[] array, int downBorder = 0, int topBorder = 100)
+int[] SortByCountMethod(int[] array, int downBorder, int topBorder)
 {
-    int[] counts = new int[100];
+    // Создаем массив счетчиков в диапазоне значений массива
+    int[] counts = new int[(topBorder + 2) - downBorder];
+
     for (int i = 0; i < array.Length; i++)
     {
+        // Прибавляем счетчик значений
         counts[array[i]] += 1;
     }
+        // Переводим счетчики в значения массива
     int counter = 0; 
     for (int j = 0; counter < array.Length; j++)
     {
@@ -179,17 +183,23 @@ int arrayLenth = ReadData("Введити длину массива");
 // PrintResult($"Разница (Max - Min) -> {MaxSubMinElemtntsOf(array)}");
 
 // Исполнение прогораммы *
-// Сортировка вставкой
 
-// int[] intArray = FillIntArray(arrayLenth, 0, 100);
-// Print1DIntArr(intArray);
-// Print1DIntArr(SortByPustMethod(intArray));
-
-// Сортировка подсчетом
-
-int[] intArray = FillIntArray(arrayLenth, 0, 100);
+int downBorder = ReadData("Введити минимальное значение");
+int topBorder = ReadData("Введити максимальное значение");
+int[] intArray = FillIntArray(arrayLenth, downBorder, topBorder);
+int[] oneArray = intArray;
+int[] twoArrey = intArray;
 Print1DIntArr(intArray);
-Print1DIntArr(SortByCountMethod(intArray));
+PrintResult("Сортировка Вставкой");
+DateTime d1 = DateTime.Now;
+// Сортировка вставкой
+Print1DIntArr(SortByPustMethod(oneArray));
+Console.WriteLine(DateTime.Now - d1);
+// Сортировка подсчетом
+PrintResult("Сортировка Подсчетом");
+DateTime d2 = DateTime.Now;
+Print1DIntArr(SortByCountMethod(twoArrey, downBorder, topBorder));
+Console.WriteLine(DateTime.Now - d2);
 
 
 
