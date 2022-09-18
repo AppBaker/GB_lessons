@@ -21,8 +21,8 @@ double CalculateSumDigit(int number)
     int sumDigit = 0;
     while (number > 0)
     {
-        sumDigit += (number%10);
-        number = number/10;
+        sumDigit += (number % 10);
+        number = number / 10;
     }
     return sumDigit;
 }

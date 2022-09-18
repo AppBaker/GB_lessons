@@ -54,12 +54,12 @@ int[] FillArray(int num, int downBorder = 0, int topBorder = 300)
 //Печатает одномерный массив
 void Print1DArr(int[] arr)
 {
-    Console.WriteLine("[" + string.Join(",",arr) + "]");
+    Console.WriteLine("[" + string.Join(",", arr) + "]");
 }
 // Проверка вхождения в диапазон([max:min])
 bool TestInRange(int number, int min, int max)
 {
-    return (number >= min && number<=max) ? true : false;
+    return (number >= min && number <= max) ? true : false;
 }
 
 // Поиск элементов в массиве в заданном диапазоне

@@ -69,7 +69,7 @@ int CountEvenNumbersIn(int[] array)
 
 //* Сортировка массива метод пузырька
 int[] SortArrayBubbleMethod(int[] array)
-{   
+{
     int iterations = 0;
     // Проходим по массиву
     for (int j = 0; j < array.Length; j++)
@@ -77,7 +77,7 @@ int[] SortArrayBubbleMethod(int[] array)
         bool splitNumbers = false;
         // После каждой итерации большее значение уходит вправо
         for (int i = 0; i < array.Length - 1 - j; i++)
-        {   
+        {
             // Меняем местами, передвигая большее значение вправо
             if (array[i] > array[i + 1])
             {

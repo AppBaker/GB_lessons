@@ -3,7 +3,7 @@
 // случайными числами из промежутка [-9, 9].
 // Найдите сумму отрицательных и положительных
 // элементов массива.
- 
+
 //=============================================
 
 //Запрос данных у пользователя
@@ -28,7 +28,7 @@ int[] FillArray(int num, int downBorder, int topBorder)
         //Заполняем массив
         for (int i = 0; i < arr.Length; i++)
         {
-            arr[i] = numSintezator.Next(downBorder, topBorder+1);
+            arr[i] = numSintezator.Next(downBorder, topBorder + 1);
         }
     }
     //Возвращаем результат
@@ -72,11 +72,11 @@ int arrayLength = ReadData("Введите длину массива: ");
 int downBorder = ReadData("Введите нижнюю границу заполнения массива: ");
 int topBorder = ReadData("Введите верхнюю границу заполнения массива: ");
 
-int[] inputArray = FillArray(arrayLength,downBorder,topBorder);
+int[] inputArray = FillArray(arrayLength, downBorder, topBorder);
 Print1DArr(inputArray);
 
 int[] sumArray = NegotivPositivSums(inputArray);
 
-PrintResult("Сумма >0: "+sumArray[0]+ " Сумма <0: "+sumArray[1]);
+PrintResult("Сумма >0: " + sumArray[0] + " Сумма <0: " + sumArray[1]);
 Print1DArr(sumArray);
 

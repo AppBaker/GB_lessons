@@ -51,18 +51,18 @@ int[] FillArray(int num, int downBorder = 1, int topBorder = 4)
 //Печатает одномерный массив
 void Print1DArr(int[] arr)
 {
-    Console.WriteLine("[{0}]", string.Join(",",arr));
+    Console.WriteLine("[{0}]", string.Join(",", arr));
 }
 // Создание массива произведения двух чисел
 int[] MultiplArray(int[] array)
 {
-    int halfLenthArray = array.Length/2;
-    int lenthArray = array.Length -1;
+    int halfLenthArray = array.Length / 2;
+    int lenthArray = array.Length - 1;
     int[] multArray = new int[halfLenthArray];
 
     for (int i = 0; i < halfLenthArray; i++)
     {
-        int newElement = array[i]*array[lenthArray - i];
+        int newElement = array[i] * array[lenthArray - i];
         multArray[i] = newElement;
     }
     return multArray;

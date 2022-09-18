@@ -58,7 +58,7 @@ void Print1DArr(int[] arr)
 int SumNotEvenPositionNumbersIn(int[] array)
 {
     int sumOfNumbers = 0;
-    for (int i = 1; i < array.Length; i+=2)
+    for (int i = 1; i < array.Length; i += 2)
     {
         sumOfNumbers += array[i];
     }
@@ -80,7 +80,7 @@ string FindIterationNumbersIn(int[] array)
         {
             // Находим совпадения
             if (array[i] == array[j] && array[i] != -1)
-            {   
+            {
                 // Если находим совпадения то увеличиваем счетчик и присваеваем null чтобы исключить повторения
                 array[j] = -1;
                 repeatCount += 1;
