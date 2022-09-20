@@ -10,52 +10,66 @@
 // массив по элементам.
 //=============================================
 
-//Запрос данных у пользователя
-int ReadData(string line)
+// Заполняем массив
+int[] GenArray(int arrLength, int start, int stop)
 {
-    //Выводим сообщение
-    Console.WriteLine(line);
-    int result = int.Parse(Console.ReadLine() ?? "0");
-    return result;
+    int[] array = new int[arrLength];
+    Random ren = new Random();
 
-}
-
-// Метод, принимает строку, выводит в консоль
-void PrintResult(string line)
-{
-    Console.WriteLine(line);
-}
-
-//Универсальный метод генерации и заполнения массива
-// Создаем массив с целыми числами [0,100]
-int[] FillIntArray(int num, int downBorder = 0, int topBorder = 100)
-{
-    //Генератор случайных чисел
-    Random numSintezator = new Random();
-    //Создаем массив
-    int[] arr = new int[num];
-    //Тест границ
-    if (downBorder > topBorder)
+    for (int i = 0; i < arrLength; i++)
     {
-        int temp = downBorder;
-        downBorder = topBorder;
-        topBorder = temp;
+        array[i] = ren.Next(start, stop + 1);
     }
-    //Заполняем массив
+    return array;
+}
+
+// печатаем массив
+void PrintArray(int[] arr)
+{
+    Console.Write("[" + arr[0] + ", ");
+    for (int i = 1; i < arr.Length - 1; i++)
+    {
+        Console.Write(arr[i] + ", ");
+    }
+    Console.Write(arr[arr.Length - 1] + "]");
+    Console.WriteLine();
+}
+//Метод разварота массива и создание нового массива
+int[] SwapNewArray(int[] arr)
+{
+    int[] outArr = new int[arr.Length];
     for (int i = 0; i < arr.Length; i++)
     {
-        arr[i] = numSintezator.Next(downBorder, topBorder + 1);
+        outArr[i] = arr[arr.Length - 1 - i];
     }
-    //Возвращаем результат
+    return outArr;
+}
+
+//Метод разварота заданного массива
+int[] SwapArray(int[] arr)
+{
+    int bufElement = 0;
+    for (int i = 0; i < arr.Length / 2; i++)
+    {
+        bufElement = arr[arr.Length - 1 - i];
+        arr[arr.Length - 1 - i] = arr[i];
+        arr[i] = bufElement;
+    }
     return arr;
 }
 
-// Разворот массива  созданием нового
-int [] ReversArray(int[] array)
-{
-    int[] outArray = new int[array.Length];
-    for (int i = 0; i < length; i++)
-    {
-        
-    }
-}
+
+int[] arr = GenArray(20, 1, 100);
+Console.WriteLine("Исходный массив:");
+PrintArray(arr);
+
+int[] copyArray = SwapNewArray(arr);
+Console.WriteLine("Новый перевернутый массив:");
+PrintArray(copyArray);
+Console.WriteLine("Исходный массив:");
+PrintArray(arr);
+
+arr = SwapArray(arr);
+Console.WriteLine("Перевернутый исходный массив:");
+PrintArray(arr);
+
