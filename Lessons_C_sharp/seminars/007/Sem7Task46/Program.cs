@@ -20,8 +20,7 @@ int[,] Fill2DArray(int row, int col, int downBorder = 0, int topBorder = 10)
 {
     //Генератор случайных чисел
     Random numSintezator = new Random();
-    //Создаем массив
-    int[,] arr = new int[row,col];
+    int[,] arr = new int[row, col];
     //Тест границ
     if (downBorder > topBorder)
     {
@@ -34,11 +33,34 @@ int[,] Fill2DArray(int row, int col, int downBorder = 0, int topBorder = 10)
     {
         for (int j = 0; j < col; j++)
         {
-            arr[i,j] = numSintezator.Next(downBorder, topBorder + 1);
+            arr[i, j] = numSintezator.Next(downBorder, topBorder + 1);
         }
     }
     //Возвращаем результат
     return arr;
 }
 
+ConsoleColor[] col = new ConsoleColor[]{ConsoleColor.Black,ConsoleColor.Blue,ConsoleColor.Cyan,
+                                        ConsoleColor.DarkBlue,ConsoleColor.DarkCyan,ConsoleColor.DarkGray,
+                                        ConsoleColor.DarkGreen,ConsoleColor.DarkMagenta,ConsoleColor.DarkRed,
+                                        ConsoleColor.DarkYellow,ConsoleColor.Gray,ConsoleColor.Green,
+                                        ConsoleColor.Magenta,ConsoleColor.Red,ConsoleColor.White,
+                                        ConsoleColor.Yellow};
 
+// Печать двумерного массива
+void Print2DArray(int[,] matr)
+{
+    for (int i = 0; i < matr.GetLength(0); i++)
+    {
+        for (int j = 0; j < matr.GetLength(1); j++)
+        {
+            Console.ForegroundColor = col[new System.Random().Next(0, col.Length)];
+            Console.Write($"{matr[i, j]} ");
+        }
+        Console.WriteLine();
+    }
+
+}
+
+int[,] twoDArray = Fill2DArray(10, 10, 10, 99);
+Print2DArray(twoDArray);

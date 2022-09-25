@@ -31,11 +31,8 @@ void Print2DArray(int[,] matr)
 }
 
 // Заполняем массив 
-void Fill2DArray(int[,] matr)
+int[,] Fill2DArrayMN(int[,] matr)
 {
-// Сводка:
-//     Writes the specified array of Unicode characters, followed by the current line
-//     terminator, to the standard output stream.
     for (int i = 0; i < matr.GetLength(0); i++)
     {
         for (int j = 0; j < matr.GetLength(1); j++)
@@ -43,6 +40,7 @@ void Fill2DArray(int[,] matr)
             matr[i, j] = i + j;
         }
     }
+    return matr;
 }
 
 
@@ -50,8 +48,10 @@ int m = ReadData("Введите количество столбцов");
 int n = ReadData("Введите количество строк");
 int[,] matrix = new int[m, n];
 
-Fill2DArray(matrix);
+Fill2DArrayMN(matrix);
 Print2DArray(matrix);
+Console.WriteLine();
 
-var isEven = (int v) => v % 2 == 0;
-Console.WriteLine(isEven(4));
+
+// var isEven = (int v, int d) => v % 2 == 0 && v + d >10;
+// Console.WriteLine(isEven(4, 4));
