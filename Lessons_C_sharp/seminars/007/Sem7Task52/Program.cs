@@ -164,8 +164,17 @@ void PrintResult(string line)
 // PrintResult($"СРеднее арифметическое в столбцах: {AverageCalcInСolumns(matrix)}");
 
 // Исполнение программы *
-int n = ReadData("Введите количество строк");
-int m = ReadData("Введите количество столбцов");
-int[,] matrix = Fill2DArray(n, m, 10, 99);
+// int n = ReadData("Введите количество строк");
+// int m = ReadData("Введите количество столбцов");
+int[,] matrix = Fill2DArray(5, 5, 10, 99);
+while (true)
+{
 
-Print1DArrWithColor(DiagonalOf2DArray(matrix));
+    
+    DiagonalOf2DArray(matrix);
+    await Task.Delay(700);
+    Console.Clear();
+}
+
+
+// Print1DArrWithColor(DiagonalOf2DArray(matrix));
