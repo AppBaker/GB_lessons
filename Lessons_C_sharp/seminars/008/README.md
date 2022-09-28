@@ -25,4 +25,7 @@
 60. [Sem8Task60](/Lessons_C_sharp/seminars/008/Sem8Task60/Program.cs) -> Home Work
 
 #### 61. Вывести первые N строк треугольника Паскаля. Сделать вывод в виде равнобедренного треугольника
-61. [Sem8Task61](/Lessons_C_sharp/seminars/008/Sem8Task61/Program.cs) -> Home work (Поиск элементов)
+61. [Sem8Task61](/Lessons_C_sharp/seminars/008/Sem8Task61/Program.cs)
+
+#### 62. Напишите программу, которая заполнит спирально массив 4 на 4.
+62. [Sem8Task62](/Lessons_C_sharp/seminars/008/Sem8Task62/Program.cs) -> Home Work
