@@ -100,3 +100,4 @@ int[,] matrix = Fill2DArray(n, m, 0, 10);
 Print2DArray(matrix);
 (int,int) max = MaxElementInArray(SumOfRowsIn2dArray(matrix));
 PrintResult($"Максимальная сумма в строке {max.Item1} = {max.Item2}");
+

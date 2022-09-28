@@ -13,7 +13,10 @@
 56. [Sem8Task56](/Lessons_C_sharp/seminars/008/Sem7Task56/Program.cs) -> Home Work
 
 #### 57 Составить частотный словарь элементов двумерного массива. Частотный словарь содержит информацию о том, сколько раз встречается элемент входных данных.
-57. [Sem8Task57](/Lessons_C_sharp/seminars/008/Sem8Task57/Program.cs) 
+57. [Sem8Task57](/Lessons_C_sharp/seminars/008/Sem8Task57/Program.cs)
+
+#### 58 Задайте две матрицы. Напишите программу, которая будет находить произведение двух матриц.
+58. [Sem8Task58](/Lessons_C_sharp/seminars/008/Sem8Task58/Program.cs) -> Home Work
 
 #### 59 Задайте двумерный массив из целых чисел. Напишите программу, которая удалит строку и столбец, на пересечении которых расположен наименьший элемент массива.
 59. [Sem8Task59](/Lessons_C_sharp/seminars/008/Sem8Task59/Program.cs)
