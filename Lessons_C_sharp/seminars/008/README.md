@@ -7,10 +7,10 @@
 54. [Sem8Task54](/Lessons_C_sharp/seminars/008/Sem8Task54/Program.cs) -> Home Work
 
 #### 55. Задайте двумерный массив. Напишите программу, которая заменяет строки на столбцы. В случае, если это невозможно, программа должна вывести сообщение для пользователя.
-55. [Sem8Task55](/Lessons_C_sharp/seminars/008/Sem7Task55/Program.cs)
+55. [Sem8Task55](/Lessons_C_sharp/seminars/008/Sem8Task55/Program.cs)
 
 #### 56. Задайте прямоугольный двумерный массив. Напишите программу, которая будет находить строку с наименьшей суммой элементов
-56. [Sem8Task56](/Lessons_C_sharp/seminars/008/Sem7Task56/Program.cs) -> Home Work
+56. [Sem8Task56](/Lessons_C_sharp/seminars/008/Sem8Task56/Program.cs) -> Home Work
 
 #### 57. Составить частотный словарь элементов двумерного массива. Частотный словарь содержит информацию о том, сколько раз встречается элемент входных данных.
 57. [Sem8Task57](/Lessons_C_sharp/seminars/008/Sem8Task57/Program.cs)
