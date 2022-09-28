@@ -90,7 +90,7 @@ void Print3DArray(int[,,] matr, bool print)
     }
 }
 
-
+// Исполнение программы
 int n = ReadData("Введите количество строк: ");
 int m = ReadData("Введите количество столбцов ");
 int k = ReadData("Введите количество рядов ");
