@@ -57,5 +57,3 @@ int Pow(int num, int pow)
     }
     return result;
 }
-
-Console.WriteLine($"{Pow(2, 8)}");
